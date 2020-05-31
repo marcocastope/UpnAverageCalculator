@@ -19,5 +19,5 @@ class MainActivity : AppCompatActivity() {
         main_title.loadAnimation(this, R.animator.title_animation)
         main_subtitle.loadAnimation(this, R.animator.subtitle_animation)
     }
-    
+
 }
