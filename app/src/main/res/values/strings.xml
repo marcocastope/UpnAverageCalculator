@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">UpnAverageCalculator</string>
+    <string name="classroom_title">Curso Presencial</string>
+    <string name="note1">Nota T1</string>
+    <string name="note_ep">Nota EP</string>
+    <string name="note_t2">Nota T2</string>
+    <string name="note_ef">Nota EF</string>
+    <string name="classroom_btn_content">Calcular Promedio</string>
+    <string name="classroom_result_without_round">Promedio Final (Sin Redondeo):</string>
+    <string name="classroom_result_with_round">Promedio Final (PT):</string>
 </resources>

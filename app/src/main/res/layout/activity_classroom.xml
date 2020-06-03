@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClassroomActivity">
+
+    <TextView
+        android:id="@+id/classroom_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/classroom_title"
+        android:fontFamily="@font/mbold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/classroom_notes_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/classroom_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/classroom_note1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:padding="10dp"
+            android:inputType="number"
+            android:layout_marginBottom="15dp"
+            android:hint="@string/note1"/>
+
+        <EditText
+            android:id="@+id/classroom_note_partial"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:padding="10dp"
+            android:inputType="number"
+            android:layout_marginBottom="15dp"
+            android:hint="@string/note_ep"/>
+
+        <EditText
+            android:id="@+id/classroom_note2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:padding="10dp"
+            android:inputType="number"
+            android:layout_marginBottom="15dp"
+            android:hint="@string/note_t2"/>
+
+        <EditText
+            android:id="@+id/classroom_note_final"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:padding="10dp"
+            android:inputType="number"
+            android:layout_marginBottom="15dp"
+            android:hint="@string/note_ef"/>
+
+        <Button
+            android:id="@+id/classroom_calc_btn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/classroom_btn_content"
+            android:fontFamily="@font/mregular"
+            android:textSize="16sp"
+            android:textAppearance="@style/Widget.AppCompat.Button"
+            android:background="@drawable/bg_calc_btn"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/classroom_results_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/classroom_notes_wrapper"
+        app:layout_constraintStart_toStartOf="@id/classroom_notes_wrapper">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/classroom_result_without_round"/>
+
+            <TextView
+                android:id="@+id/classroom_result_without_round"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/classroom_result_with_round"/>
+
+            <TextView
+                android:id="@+id/classroom_result_with_round"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

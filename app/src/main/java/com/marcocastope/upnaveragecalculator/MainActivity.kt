@@ -9,9 +9,16 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        initialize()
+    }
 
+    private fun initialize() {
         setupMainAnimation()
+        setupClickListeners()
+    }
 
+    private fun setupClickListeners() {
+        main_classroom_btn.setOnClickListener { startActivity<ClassroomActivity>() }
     }
 
     private fun setupMainAnimation() {
