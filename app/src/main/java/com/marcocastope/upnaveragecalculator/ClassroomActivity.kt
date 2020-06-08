@@ -29,7 +29,7 @@ class ClassroomActivity : AppCompatActivity() {
         val result = calcProm()
         if (result != null) {
             classroom_results_wrapper.visibility = View.VISIBLE
-            classroom_result_without_round.text = "%.2f".format(result)
+            classroom_result_without_round.text = getString(R.string.number_format).format(result)
             classroom_result_with_round.text = result.roundToInt().toString()
         } else {
             toast("Todos los campos son requeridos")
@@ -37,7 +37,10 @@ class ClassroomActivity : AppCompatActivity() {
     }
 
     private fun setupClickListeners() {
-        classroom_calc_btn.setOnClickListener { showResults() }
+        classroom_calc_btn.setOnClickListener {
+            it.loadAnimation(this, R.animator.btn_animation)
+            showResults()
+        }
     }
 
 }

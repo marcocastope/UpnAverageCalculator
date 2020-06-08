@@ -8,4 +8,8 @@
     <string name="classroom_btn_content">Calcular Promedio</string>
     <string name="classroom_result_without_round">Promedio Final (Sin Redondeo):</string>
     <string name="classroom_result_with_round">Promedio Final (PT):</string>
+    <string name="note_t3">Nota T3</string>
+    <string name="note_t4">Nota T4</string>
+    <string name="virtual_course_title">Curso Virtual</string>
+    <string name="number_format">%.2f</string>
 </resources>

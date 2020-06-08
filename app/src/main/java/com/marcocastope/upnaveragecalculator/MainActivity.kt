@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupClickListeners() {
         main_classroom_btn.setOnClickListener { startActivity<ClassroomActivity>() }
+        main_virtual_class_btn.setOnClickListener { startActivity<VirtualCourseActivity>() }
     }
 
     private fun setupMainAnimation() {
